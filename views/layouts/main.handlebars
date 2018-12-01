@@ -1,36 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <meta charset="utf-8">
     <title>App</title>
 </head>
-<div class="navbar navbar-default navbar-static-top" role="navigation">
-  <div class="container">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="/">App</a>
-    </div>
-    <ul class="nav navbar-nav navbar-right">
-      {{#currentUser}}
-      <li>
-        <a href="/edit">
-          Hello, {{name}}
-        </a>
-      </li>
-      <li><a href="/logout">Log out</a></li>
-      {{else}}
-        <li><a href="/login">Log in</a></li>
-        <li><a href="/signup">Sign up</a></li>
-      {{/currentUser}}
-    </ul>
+
+<div class="container">
+  <!-- SQUIRREL -->
+   <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/529582/Tommy-Lee-Jones-Squirrel.png" class="TLJ-Squirrel" />
+  <!--- LOGO -->
+  {{{body}}}
+  <!-- LINKS -->
+  <div id="links" class="link__section animated">
+  <a id="portfolio"><p class="portfolio-link">View Portfolio</p></a>
+  <div class="triangle animated heartBeat infinite"></div>
+  </div>
+  <!-- CONTACT BUTTONS -->
+  <div id="btns" class="btn__section animated">
+   <!-- Github, Behance, Codepen, Contact --->
+   <!--<a id=""><img src="/" class="btn"></a>
+    <a id=""><img src="/" class="btn"></a>
+    <a id=""><img src="/" class="btn"></a>
+    <a id=""><img src="/" class="btn"></a> -->
   </div>
 </div>
-<div class="container">
+<script src="/js/scripts.js"></script>
 
 
 
-
-    {{{body}}}
-
-</div>
 </html>

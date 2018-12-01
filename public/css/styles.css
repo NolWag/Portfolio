@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:700");
+body {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/529582/Yellow-BG-2.jpg");
+  background-size: 100%;
+  margin: 2em;
+  background-repeat: no-repeat; }
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
+.TLJ-Squirrel {
+  align-self: center;
+  height: auto;
+  width: 300px;
+  margin-bottom: -2em; }
+
+.img__section {
+  display: flex;
+  justify-content: center; }
+
+.main-img {
+  width: 400px;
+  height: 400px; }
+
+.port-img {
+  width: 400px;
+  height: 400px; }
+
+.port__section {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border: #000 solid 15px; }
+
+.MT {
+  margin-top: -400px; }
+
+.hidden {
+  display: none; }
+
+.link__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: centent; }
+
+.portfolio-link {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 1.2em;
+  margin-top: -1.5em; }
+
+a {
+  text-decoration: none;
+  outline: none; }
+
+.triangle {
+  align-self: center;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid #fff; }
+
+.btn__section {
+  display: flex;
+  justify-content: center; }
+
+.btn {
+  width: 50px;
+  height: 50px;
+  margin: 0 1em; }
