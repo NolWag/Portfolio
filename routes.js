@@ -1,5 +1,10 @@
 var express = require("express");
 var passport = require("passport");
+var axios = require('axios');
+
+var Behance = require("node-behance-api");
+var behance = new Behance({"client_id": "YsLIhxH7ivgPvv9trvfgn6mxQ53MXzHC"})
+Behance.initOptions();
 
 var User = require("./models/user");
 var router = express.Router();
@@ -21,12 +26,33 @@ router.use(function(req, res, next) {
 });
 
 router.get("/", function(req, res, next) {
-  User.find()
-  .sort({ createdAt: "descending" })
-  .exec(function(err, users) {
-    if (err) { return next(err); }
-    res.render("index", { users: users });
-  });
+  // User.find()
+  // .sort({ createdAt: "descending" })
+  // .exec(function(err, users) {
+  //   if (err) { return next(err); }
+  //   res.render("index", { users: users });
+  // });
+    //   behance.get({
+    //     api: Behance.APIS.GET_USER_PRODUCT,
+    //     params: { //or simply behance.get('user',
+    //         user:'nolanwagner'
+    //     }
+    // }, function (error, result) {
+    //     if (error)
+    //         console.log(error)
+    //     else
+    //         res.render('index', { data: result });
+    //         console.log(result);
+    // });
+
+    axios.get('https://www.behance.net/v2/users/nolanwagner/projects/4889175?api_key=' + 'APIKEY')
+    .then(function(response) {
+      console.log(response.data.projects)
+      res.render('index', { response: response.data.projects })
+    })
+    .catch(function(error) {
+      console.log(error);
+    });
 });
 
 router.get("/login", function(req, res) {
