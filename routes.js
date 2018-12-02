@@ -24,7 +24,7 @@ router.use(function(req, res, next) {
 
 router.get("/", function(req, res, next) {
     //res.render('index');
-    axios.get('https://www.behance.net/v2/users/nolanwagner/projects/4889175?api_key=' + 'APIKEY')
+    axios.get('https://www.behance.net/v2/users/nolanwagner/projects/4889175?api_key=' + 'YsLIhxH7ivgPvv9trvfgn6mxQ53MXzHC')
     .then(function(response) {
       //console.log(response.data.projects);
       var data = response.data.projects;
