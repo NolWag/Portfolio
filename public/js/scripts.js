@@ -22,6 +22,9 @@ portfolio.addEventListener('click', function() {
 //
 
 img.addEventListener('click', function(e){
+  if(img.appendChild.classList.value == 'btn') {
+    return;
+} else {
   img.appendChild(e.target);
-  e.target.classList.add('hidden');
+}
 });

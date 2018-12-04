@@ -16,10 +16,10 @@ body {
 .btn {
   text-transform: uppercase;
   font-family: "Roboto", sans-serif;
-  color: #000;
+  color: yellow;
   padding: .5em 1em;
-  border: .3em solid #fff;
-  margin: 0em .5em; }
+  text-align: center;
+  background-color: #333; }
   .btn:hover {
     background-color: #fff; }
 
@@ -51,17 +51,26 @@ body {
   height: 400px; }
 
 .port-img {
-  width: 400px;
-  height: 400px; }
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 250px;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.content__section {
+  display: flex;
+  flex-direction: column; }
 
 .port__section {
   display: flex;
   flex-wrap: wrap;
   overflow: hidden;
-  width: 400px;
-  height: 400px;
   background-color: #fff;
-  border: #000 solid 15px; }
+  border: #000 solid 15px;
+  height: 280px;
+  width: 250px; }
 
 .MT {
   margin-top: -400px; }
