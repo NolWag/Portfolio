@@ -1,139 +1,68 @@
+ @import url('https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:400,700');
+ 
 body {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/529582/Yellow-BG-2.jpg');
-  background-size: 100%;
+  background-color: #1e1e1e;
   margin: 2em;
-  background-repeat: no-repeat;
-}
-
-@media screen and (max-width: 1200px) {
-  body {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/529582/Yellow-BG-Mobile.jpg');
-  }
-}
-
-@media screen and (max-width: 600px) {
-  body {
-  background-image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/529582/Yellow-BG-Mobile-Small.jpg');
-  }
-}
-
-.btn {
-  text-transform: uppercase;
-  font-family: "Roboto", sans-serif;
-  color: yellow;
-  padding: .5em 1em;
-  text-align: center;
-  background-color: #333;
-  &:hover {
-    background-color: #fff;
-
-  }
-}
-
-.view--link {
-  position: absolute;
-background-color: #fff;
-padding: 1em;
-text-decoration: none;
-text-transform: uppercase;
-font-family: "Roboto",sans-serif;
+  color: #fff;
 }
 
 .container {
   display: flex;
   justify-content: center;
-  flex-direction: column;
-}
-
-.TLJ-Squirrel {
-  align-self: center;
-  height: auto;
-  width: 300px;
-  margin-bottom: -2em;
-}
-
-.img__section {
-  display: flex;
-  justify-content: center;
-  //min-height: 400px;
-}
-
-.main-img {
-  width: 400px;
-  height: 400px;
- }
-
-.port-img__container {
-
+  padding: 3em;
 }
 
 .port-img {
-  position: relative;
-float: left;
-width:  250px;
-height: 250px;
-background-position: 50% 50%;
-background-repeat:   no-repeat;
-background-size:     cover;
+  width: 300px;
+}
+
+.img__section {
+  height: 250px;
+  overflow: hidden;
+  align-self: center;
 }
 
 .content__section {
-  display: flex;
-  flex-direction: column;
+  width: 50%;
 }
 
-.port__section {
-  display: flex;
-  flex-wrap: wrap;
-  overflow: hidden;
-  background-color: #fff;
-  border: #000 solid 15px;
-  height: 280px;
-  width: 250px;
-}
-
-.MT {
-  margin-top: -400px;
-}
-
-.hidden {
-  display: none;
-}
-
- @import url('https://fonts.googleapis.com/css?family=Roboto:700');
-
-.link__section {
-  display: flex;
-  flex-direction: column;
-  justify-content: centent;
-}
-
-.portfolio-link {
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
+h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 1.2em;
-  margin-top: -1.5em;
-  //margin-bottom: 0;
+  font-size: 4em;
+  margin: 0;
 }
 
-a {
-  text-decoration: none;
-  outline: none;
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: yellow;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-.triangle {
-  align-self: center;
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-top: 20px solid #fff;
+p {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  font-size: 1.5em;
+  margin: 1em 0em;
 }
 
-.btn__section {
-  display: flex;
-  justify-content: center;
+button {
+  border: 1px #333 solid;
+  background-color: #fff0;
+  color: #fff;
+  padding: 1em 2.5em;
+  font-size: 1em;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  &:hover {
+    background-color: #fff;
+    color: #333;
+  }
+}
+
+.btn-space {
+  margin: 0 2em;
 }
