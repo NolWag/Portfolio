@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css?family=Raleway:300,400|Roboto:400,700');
- 
+
 body {
   background-color: #1e1e1e;
   margin: 2em;
@@ -17,13 +17,15 @@ body {
 }
 
 .img__section {
-  height: 250px;
-  overflow: hidden;
   align-self: center;
 }
 
 .content__section {
-  width: 50%;
+  width: 100%;
+}
+
+.hidden {
+  display: none;
 }
 
 h1 {
@@ -50,7 +52,7 @@ p {
   line-height: 1.6em;
 }
 
-button {
+button, .btn {
   border: 1px #333 solid;
   background-color: #fff0;
   color: #fff;
@@ -63,6 +65,7 @@ button {
     color: #333;
   }
 }
+
 
 .btn-space {
   margin: 0 2em;

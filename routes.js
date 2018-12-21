@@ -40,7 +40,12 @@ router.get("/", function(req, res, next) {
         }
       });
     })
-    res.render('index');
+    Behance.find()
+    .sort({ id: "descending" })
+    .exec(function(err, users) {
+      if (err) { return next(err); }
+      res.render("index", { response: users });
+    });
     })
     .catch(function(error) {
       console.log(error);

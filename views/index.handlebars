@@ -1,20 +1,22 @@
     <div class="img__section">
       <div id="img" class="port__section">
       {{#response}}
-        {{#covers}}
-        <div class="content__section">
-        <img id="port-img" data-key="{{@index}}" src="{{this.original}}" class="port-img" />
-        {{/covers}}
-        <a class="btn" href="{{this.url}}">View</a>
+        <div class="content__section hidden">
+          <a href="{{this.url}}">
+        <img id="port-img" data-key="{{@index}}" src="{{this.image}}" class="port-img" />
+        </a>
       </div>
       {{/response}}
+
     </div>
     </div>
+    <a id="next" class="btn hidden">Next</a>
+
 <div class="content__section">
   <h1>Nolan Wagner</h1>
   <h3>Web Developer / Designer</h3>
   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec tortor a odio dictum accumsan. Donec sit amet aliquam risus. Nulla accumsan enim quam. Sed cursus augue a ante aliquam semper at et ex. Sed vel mauris ac eros vulputate scelerisque. </p>
-  <button>Portfolio</button>
+  <button id="portfolio">Portfolio</button>
   <button>Hire Me</button>
   <button>Github</button>
   <button>Blog</button>

@@ -1,30 +1,16 @@
-var portfolio = document.getElementById('portfolio');
-var logo = document.getElementById('logo');
-var port = document.getElementById('port-img');
-var links = document.getElementById('links');
-var img = document.getElementById('img');
+var port = document.getElementById('portfolio');
+var projects = document.getElementById('img');
+var next = document.getElementById('next');
 
-
-portfolio.addEventListener('click', function() {
-  //console.log('i');
-  logo.classList.add('flipOutX');
-  links.classList.add('fadeOutDown');
-  setTimeout(function(){
-     logo.classList.add('hidden');
-     img.classList.remove('hidden');
-  }, 1000);
+port.addEventListener('click', function() {
+    var classes = projects.firstElementChild.classList;
+    classes.remove('hidden');
+    next.classList.remove('hidden');
 });
 
-// Does node = 0?
-// next node
-// if false - Add hidden class and remove hidden class from nextSiblingElement
-// else
-//
-
-img.addEventListener('click', function(e){
-  if(img.appendChild.classList.value == 'btn') {
-    return;
-} else {
-  img.appendChild(e.target);
-}
+next.addEventListener('click', function() {
+  console.log('click')
+  projects.appendChild(projects.firstElementChild);
+  projects.lastElementChild.classList.add('hidden');
+  projects.firstElementChild.classList.remove('hidden');
 });
