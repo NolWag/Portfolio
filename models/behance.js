@@ -1,9 +1,10 @@
 var mongoose = require('mongoose');
 var behanceSchema = mongoose.Schema({
-  id: {type: Number},
+  id: { type: Number},
   name: { type: String },
   image: { type: String },
   url: { type: String },
+  tags: { type: Array }
 });
 
 // userSchema.methods.name = function() {

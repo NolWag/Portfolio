@@ -38,7 +38,8 @@ p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
   font-size: 1.5em;
-  margin: 1em 0em; }
+  margin: 1em 0em;
+  line-height: 1.6em; }
 
 button {
   border: 1px #333 solid;

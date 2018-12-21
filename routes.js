@@ -23,20 +23,28 @@ router.use(function(req, res, next) {
 });
 
 router.get("/", function(req, res, next) {
-    //res.render('index');
     axios.get('https://www.behance.net/v2/users/nolanwagner/projects/4889175?api_key=' + 'YsLIhxH7ivgPvv9trvfgn6mxQ53MXzHC')
     .then(function(response) {
-      //console.log(response.data.projects);
-      var data = response.data.projects;
-      // Iterate over request object
-      res.render("index", { response: data });
-      console.log(response);
-
-      //res.render('index', { response: response.data.projects })
+    response.data.projects.forEach(({id, name, url, covers, fields}) => {
+      Behance.findOne({ id }, function(err, user) {
+        if (err) { return next(err); }
+        if (!user) {
+          var newBehance = new Behance({
+            id: id,
+            name: name,
+            url: url,
+            image: covers.original,
+            tags: fields
+          });
+          newBehance.save(next);
+        }
+      });
+    })
+    res.render('index');
     })
     .catch(function(error) {
       console.log(error);
-    });
+  });
 });
 
 // Timer for API Request
