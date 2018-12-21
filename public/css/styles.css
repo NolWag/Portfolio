@@ -18,8 +18,27 @@ body {
 .content__section {
   width: 100%; }
 
+.info__section {
+  width: 100%;
+  padding: 3em; }
+
 .hidden {
   display: none; }
+
+.form-group {
+  display: flex;
+  flex-wrap: wrap; }
+
+.form-input {
+  border: 1px solid #fff;
+  background-color: #fff0;
+  color: #fff;
+  padding: 1em;
+  text-transform: uppercase;
+  margin: 1em 0; }
+
+.form-radio {
+  margin: 1em; }
 
 h1 {
   font-family: 'Roboto', sans-serif;
@@ -41,6 +60,10 @@ p {
   font-size: 1.5em;
   margin: 1em 0em;
   line-height: 1.6em; }
+
+form {
+  display: flex;
+  flex-direction: column; }
 
 button, .btn {
   border: 1px #333 solid;
