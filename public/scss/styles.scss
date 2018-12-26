@@ -2,14 +2,26 @@
 
 body {
   background-color: #1e1e1e;
-  margin: 2em;
+  margin: 0;
   color: #fff;
+}
+
+.fw {
+  width: 100%;
+  @media only screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
 
 .container {
   display: flex;
-  justify-content: center;
-  padding: 3em;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 0em 2em;
+  @media only screen and (min-width: 1200px) {
+    flex-direction: row;
+    margin-top: 10%;
+  }
 }
 
 .port-img {
@@ -18,15 +30,25 @@ body {
 
 .img__section {
   align-self: center;
+  height: 300px;
+  overflow: hidden;
 }
 
 .content__section {
-  width: 100%;
+  margin: 3em 0;
+  display: flex;
+  flex-direction: column;
+  @media only screen and (min-width: 1200px) {
+    display: block;
+    margin: 3em;
+    max-width: 40%;
+  }
 }
 
 .info__section {
-  width: 100%;
-  padding: 3em;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .hidden {
@@ -51,11 +73,20 @@ body {
   margin: 1em;
 }
 
+.portfolio__container {
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+
+.center {
+  text-align: center;
+}
 
 h1 {
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
-  font-size: 4em;
+  font-size: 2.5em;
   margin: 0;
 }
 
@@ -63,15 +94,15 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-weight: 400;
   color: yellow;
-  font-size: 1.8em;
+  font-size: 1em;
   text-transform: uppercase;
-  margin: 0;
+  margin: 1em 0 0 0;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
   font-weight: 300;
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: 1em 0em;
   line-height: 1.6em;
 }
@@ -93,7 +124,12 @@ button, .btn {
     background-color: #fff;
     color: #333;
   }
+  @media only screen and (min-width: 1200px) {
+    width: auto;
+  }
 }
+
+
 
 
 .btn-space {
